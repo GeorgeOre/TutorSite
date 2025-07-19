@@ -3,6 +3,40 @@
 <head>
   <title>Our Tutors | It’s Beavin’ Time</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .tutor-card {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      border: 1px solid #eee;
+      padding: 1em;
+      margin-bottom: 1em;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.05);
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .tutor-card:hover {
+      background-color: #fdf5f0;
+    }
+
+    .tutor-img {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      margin-right: 1em;
+      object-fit: cover;
+    }
+
+    .tutor-info h3 {
+      margin: 0 0 0.2em;
+    }
+
+    .tutor-info p {
+      margin: 0;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -14,49 +48,59 @@
       <a href="signup.html">Sign Up</a>
     </nav>
   </header>
+
   <main>
     <h2>Meet the Tutors</h2>
     <p>All of our mentors are current or former Caltech students with expertise in STEM and more. Click on them to explore their profiles.</p>
-    
-    <h3>George Louis Ore Gutierrez Velarde Rojas</h3>
-    <p>B.S. in Electrical Engineering with a focus in Computer Engineering — Specializes in physics and low level computer science.</p>
 
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-    <div class="badge-base LI-profile-badge" 
-         data-locale="en_US" 
-         data-size="small" 
-         data-theme="light" 
-         data-type="VERTICAL" 
-         data-vanity="george-ore" 
-         data-version="v1">
-    </div>
-    
-    <h3>Wendy Granados Razo</h3>
-    <p>B.S. in Chemical Engineering — :3.</p> 
-    
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-    <div class="badge-base LI-profile-badge" 
-         data-locale="en_US" 
-         data-size="small" 
-         data-theme="light" 
-         data-type="VERTICAL" 
-         data-vanity="wendy-granados-razo" 
-         data-version="v1">
-    </div>
-              
-    <h3>Carolina Ayala-Garnica</h3>
-    <p>Double major in Rocks and Geology — Loves eating minerals (doesn't like when people call them rocks).</p>
-    
-    <h3>Fernando Padilla</h3>
-    <p>Double major in Electrical and Engineering — Experienced in tutoring both electrical and engineering.</p>
-    
-    <h3>Yolotzin Subdias</h3>
-    <p>Double major in Mechanical Engineering and Waterpolo — Will save your life if you are drowning.</p>
-    
-    <h3>Brady Akau</h3>
-    <p>Double major in Math and Feminist Literature — Can speak twenty languages (if you count the programming ones).</p>
+    <a class="tutor-card" href="profiles/george.html">
+      <img class="tutor-img" src="images/george.jpg" alt="George Ore">
+      <div class="tutor-info">
+        <h3>George Louis Ore Gutierrez Velarde Rojas</h3>
+        <p>B.S. in Electrical Engineering with a focus in Computer Engineering — Specializes in physics and low-level computer science.</p>
+      </div>
+    </a>
 
-    
+    <a class="tutor-card" href="profiles/wendy.html">
+      <img class="tutor-img" src="images/wendy.jpg" alt="Wendy Granados">
+      <div class="tutor-info">
+        <h3>Wendy Granados Razo</h3>
+        <p>B.S. in Chemical Engineering — :3.</p>
+      </div>
+    </a>
+
+    <a class="tutor-card" href="profiles/carolina.html">
+      <img class="tutor-img" src="images/carolina.jpg" alt="Carolina Ayala-Garnica">
+      <div class="tutor-info">
+        <h3>Carolina Ayala-Garnica</h3>
+        <p>Double major in Rocks and Geology — Loves eating minerals (doesn't like when people call them rocks).</p>
+      </div>
+    </a>
+
+    <a class="tutor-card" href="profiles/fernando.html">
+      <img class="tutor-img" src="images/fernando.jpg" alt="Fernando Padilla">
+      <div class="tutor-info">
+        <h3>Fernando Padilla</h3>
+        <p>Double major in Electrical and Engineering — Experienced in tutoring both electrical and engineering.</p>
+      </div>
+    </a>
+
+    <a class="tutor-card" href="profiles/yolotzin.html">
+      <img class="tutor-img" src="images/yolotzin.jpg" alt="Yolotzin Subdias">
+      <div class="tutor-info">
+        <h3>Yolotzin Subdias</h3>
+        <p>Double major in Mechanical Engineering and Waterpolo — Will save your life if you are drowning.</p>
+      </div>
+    </a>
+
+    <a class="tutor-card" href="profiles/brady.html">
+      <img class="tutor-img" src="images/brady.jpg" alt="Brady Akau">
+      <div class="tutor-info">
+        <h3>Brady Akau</h3>
+        <p>Double major in Math and Feminist Literature — Can speak twenty languages (if you count the programming ones).</p>
+      </div>
+    </a>
+
   </main>
 </body>
 </html>
