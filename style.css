@@ -1,3 +1,4 @@
+/* Base Styles */
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
@@ -6,20 +7,40 @@ body {
   color: #333;
 }
 
-header, nav {
+/* Header with logo and navigation */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: #ff6a00;
-  padding: 1em;
+  padding: 0.5em 1em;
   color: white;
-  text-align: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* Navigation Links */
+nav {
+  display: flex;
+  gap: 1em;
 }
 
 nav a {
   color: white;
-  margin: 0 1em;
   text-decoration: none;
   font-weight: bold;
+  margin: 0 1em;
 }
 
+/* Main Content Area */
 main {
   padding: 2em;
   max-width: 800px;
@@ -29,11 +50,16 @@ main {
   border-radius: 8px;
 }
 
+/* Headings */
 h1, h2 {
   color: #ff6a00;
 }
 
-form input, form textarea, form select, form button {
+/* Forms */
+form input,
+form textarea,
+form select,
+form button {
   display: block;
   margin: 1em 0;
   padding: 0.5em;
@@ -46,4 +72,56 @@ form button {
   color: white;
   border: none;
   cursor: pointer;
+}
+
+/* Tutor Cards (if you're using tutor profiles) */
+.tutor-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+  text-decoration: none;
+  color: inherit;
+}
+
+.tutor-card:hover {
+  background-color: #fdf5f0;
+}
+
+.tutor-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-right: 1em;
+  object-fit: cover;
+}
+
+.tutor-info h3 {
+  margin: 0 0 0.2em;
+}
+
+.tutor-info p {
+  margin: 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: flex-start;
+  }
+
+  .header-left {
+    margin-bottom: 0.5em;
+  }
 }
